@@ -1,0 +1,12 @@
+{
+  "name": "gatsby-bug-repro-18243",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "dev:remark": "yarn workspace blog-remark dev",
+    "dev:mdx": "yarn workspace blog-mdx dev"
+  }
+}
