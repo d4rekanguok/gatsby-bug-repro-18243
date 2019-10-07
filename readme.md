@@ -28,6 +28,26 @@ module.exports = main
 
 ```
 
+## What to expect
+
+In each blog's gatsby-config, the options is passed to remark as below:
+
+```js
+{
+  resolve: `gatsby-remark-parser`,
+  options: {
+    foo: `bar`,
+  }
+}
+```
+
+During init, each blog should log out the following:
+```
+-----Parser Plugin Options-----
+{ options: { plugins: [], foo: 'bar' } }
+-----Parser Plugin Options-----
+```
+
 ## Step to reproduce
 
 1. Setup
